@@ -3,7 +3,7 @@ package models
 import javax.inject.{ Inject, Singleton }
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
-import models.CategoryRepository
+
 import scala.concurrent.{ Future, ExecutionContext }
 
 /**
@@ -12,9 +12,9 @@ import scala.concurrent.{ Future, ExecutionContext }
  * @param dbConfigProvider The Play db config provider. Play will inject this for you.
  */
 @Singleton
-class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, categoryRepository: CategoryRepository)(implicit ec: ExecutionContext) {
+class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, val categoryRepository: CategoryRepository)(implicit ec: ExecutionContext) {
   // We want the JdbcProfile for this provider
-  private val dbConfig = dbConfigProvider.get[JdbcProfile]
+  val dbConfig = dbConfigProvider.get[JdbcProfile]
 
   // These imports are important, the first one brings db into scope, which will let you do the actual db operations.
   // The second one brings the Slick DSL into scope, which lets you define the table and other queries.
@@ -24,9 +24,8 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
   /**
    * Here we define the table. It will have a name of people
    */
-  import categoryRepository.CategoryTable
 
-  private class ProductTable(tag: Tag) extends Table[Product](tag, "product") {
+  class ProductTable(tag: Tag) extends Table[Product](tag, "product") {
 
     /** The ID column, which is the primary key, and auto incremented */
     def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
@@ -39,7 +38,7 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
 
     def category = column[Int]("category")
 
-    def category_fk = foreignKey("cat_fk",category, cat)(_.id)
+    def category_fk = foreignKey("category_fk",category, cat)(_.id)
     /**
      * This is the tables default "projection".
      *
@@ -52,16 +51,16 @@ class ProductRepository @Inject() (dbConfigProvider: DatabaseConfigProvider, cat
     //def * = (id, name) <> ((Category.apply _).tupled, Category.unapply)
   }
 
+
   /**
-   * The starting point for all queries on the people table.
-   */
+    * The starting point for all queries on the people table.
+    */
 
   import categoryRepository.CategoryTable
 
   private val product = TableQuery[ProductTable]
 
   private val cat = TableQuery[CategoryTable]
-
 
   /**
    * Create a person with the given name and age.

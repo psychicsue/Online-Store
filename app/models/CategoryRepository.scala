@@ -6,12 +6,6 @@ import slick.jdbc.JdbcProfile
 
 import scala.concurrent.{ Future, ExecutionContext }
 
-/**
-  * A repository for people.
-  *
-  * @param dbConfigProvider The Play db config provider. Play will inject this for you.
-  */
-
 @Singleton
 class CategoryRepository @Inject() (dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
   val dbConfig = dbConfigProvider.get[JdbcProfile]
