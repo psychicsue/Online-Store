@@ -33,6 +33,14 @@ create table "opinion" (
 );
 
 
+create table "order" (
+  "id" integer not null primary key autoincrement,
+  "basket" int not null,
+  "date" varchar not null,
+  "address" varchar not null,
+);
+
+
 # --- !Downs
 
 drop table "product" if exists;
@@ -40,3 +48,4 @@ drop table "category" if exists;
 drop table "basket" if exists;
 drop table "keyword" if exists;
 drop table "opinion" if exists;
+drop table "order" if exists;
