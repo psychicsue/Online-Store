@@ -6,7 +6,7 @@
    @request.messages(key)
 }
 
-@main("Welcome to Ebiznes") {
+@main("Products") {
   @form(routes.ProductController.addProduct()) {
 		@inputText(product("name"))
 		@inputText(product("description"))
