@@ -13,8 +13,30 @@ create table "product" (
   foreign key(category) references category(id)
 );
 
+create table "basket" (
+  "id" integer not null primary key autoincrement,
+  "product" varchar not null,
+  "amount" int DEFAULT 1 not null,
+  foreign key(product) references product(id)
+);
+
+create table "keyword" (
+  "id" integer not null primary key autoincrement,
+  "value" varchar not null
+);
+
+create table "opinion" (
+  "id" integer not null primary key autoincrement,
+  "product" long not null,
+  "opinion" varchar not null,
+  foreign key(product) references product(id)
+);
+
 
 # --- !Downs
 
 drop table "product" if exists;
 drop table "category" if exists;
+drop table "basket" if exists;
+drop table "keyword" if exists;
+drop table "opinion" if exists;
