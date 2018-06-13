@@ -1,5 +1,4 @@
-# Online Store 
-## play-scala-slick-react
+# play-scala-slick-example
 
 [<img src="https://img.shields.io/travis/playframework/play-scala-slick-example.svg"/>](https://travis-ci.org/playframework/play-scala-slick-example)
 
