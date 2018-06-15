@@ -1,0 +1,157 @@
+[error] D:\e-business\play-products-crud-slick\conf\routes:26:1: type Application is not a member of package controllers
+[error] GET     /auth                       controllers.Application.index
+[error] D:\e-business\play-products-crud-slick\conf\routes:30:1: type RestApi is not a member of package controllers
+[error] GET      /rest/profile              controllers.RestApi.profile
+[error] D:\e-business\play-products-crud-slick\conf\routes:33:1: type Auth is not a member of package controllers
+[error] GET     /auth/signup                controllers.Auth.startSignUp
+[error] D:\e-business\play-products-crud-slick\conf\routes:49:1: type WebJarAssets is not a member of package controllers
+[error] GET     /webjars/*file              controllers.WebJarAssets.at(file)
+[error] D:\e-business\play-products-crud-slick\conf\routes:26:1: type Application is not a member of package controllers
+[error] GET     /auth                       controllers.Application.index
+[error] D:\e-business\play-products-crud-slick\conf\routes:30:1: type RestApi is not a member of package controllers
+[error] GET      /rest/profile              controllers.RestApi.profile
+[error] D:\e-business\play-products-crud-slick\conf\routes:33:1: type Auth is not a member of package controllers
+[error] GET     /auth/signup                controllers.Auth.startSignUp
+[error] D:\e-business\play-products-crud-slick\conf\routes:49:1: type WebJarAssets is not a member of package controllers
+[error] GET     /webjars/*file              controllers.WebJarAssets.at(file)
+[error] D:\e-business\play-products-crud-slick\conf\routes:26:1: type Application is not a member of package controllers
+[error] GET     /auth                       controllers.Application.index
+[error] D:\e-business\play-products-crud-slick\conf\routes:30:1: type RestApi is not a member of package controllers
+[error] GET      /rest/profile              controllers.RestApi.profile
+[error] D:\e-business\play-products-crud-slick\conf\routes:33:1: type Auth is not a member of package controllers
+[error] GET     /auth/signup                controllers.Auth.startSignUp
+[error] D:\e-business\play-products-crud-slick\conf\routes:49:1: type WebJarAssets is not a member of package controllers
+[error] GET     /webjars/*file              controllers.WebJarAssets.at(file)
+[error] D:\e-business\play-products-crud-slick\app\views\auth\finishSignUp.scala.html:1:1: not found: type Profile
+[error] @(profile:Profile)(implicit messages:Messages)
+[error] ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\finishSignUp.scala.html:1:11: not found: type Profile
+[error] @(profile:Profile)(implicit messages:Messages)
+[error]           ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\finishSignUp.scala.html:6:2: not found: type Profile
+[error] }
+[error]  ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\resetPassword.scala.html:3:31: not found: value b3
+[error] @implicitFieldConstructor = @{b3.horizontal.fieldConstructor("col-md-3","col-md-6")}
+[error]                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\resetPassword.scala.html:9:4: not found: value b3
+[error]   @b3.form(routes.Auth.handleResetPassword(tokenId)) {
+[error]    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\resetPassword.scala.html:14:8: not found: value b3
+[error]       @b3.password(passwordForm("password1"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\resetPassword.scala.html:19:8: not found: value b3
+[error]       @b3.password(passwordForm("password2"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\resetPassword.scala.html:24:8: not found: value b3
+[error]       @b3.submit('class -> "btn btn-primary"){ @Messages("reset.reset") }
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:1:13: object mohiva is not a member of package com
+[error] @import com.mohiva.play.silhouette.impl.providers.SocialProviderRegistry
+[error]             ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:7:9: not found: value AuthForms
+[error] @views.html.templates.mainAuth(Messages("signin.title"), tab = "signin") {
+[error]         ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:7:31: not found: type SocialProviderRegistry
+[error] @views.html.templates.mainAuth(Messages("signin.title"), tab = "signin") {
+[error]                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:3:20: not found: value AuthForms
+[error] @(signInForm: Form[AuthForms.SignInData], socialProviderRegistry:SocialProviderRegistry)(implicit request: RequestHeader, messages:Messages)
+[error]                    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:3:66: not found: type SocialProviderRegistry
+[error] @(signInForm: Form[AuthForms.SignInData], socialProviderRegistry:SocialProviderRegistry)(implicit request: RequestHeader, messages:Messages)
+[error]                                                                  ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:5:31: not found: value b3
+[error] @implicitFieldConstructor = @{b3.horizontal.fieldConstructor("col-md-3","col-md-6")}
+[error]                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:11:4: not found: value b3
+[error]   @b3.form(routes.Auth.authenticate) {
+[error]    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:16:8: not found: value b3
+[error]       @b3.email(signInForm("email"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:21:8: not found: value b3
+[error]       @b3.password(signInForm("password"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:25:8: not found: value b3
+[error]       @b3.checkbox(signInForm("rememberMe"),
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:29:8: not found: value b3
+[error]       @b3.submit('class -> "btn btn-primary"){ @Messages("signin.submit") }
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\signIn.scala.html:51:2: not found: value AuthForms
+[error] }
+[error]  ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startResetPassword.scala.html:3:31: not found: value b3
+[error] @implicitFieldConstructor = @{b3.horizontal.fieldConstructor("col-md-3","col-md-6")}
+[error]                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startResetPassword.scala.html:9:4: not found: value b3
+[error]   @b3.form(routes.Auth.handleStartResetPassword) {
+[error]    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startResetPassword.scala.html:13:8: not found: value b3
+[error]       @b3.email(form("email"), '_label -> Messages("reset.email"), 'placeholder -> Messages("reset.email"), 'autofocus -> true)
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startResetPassword.scala.html:14:8: not found: value b3
+[error]       @b3.submit('class -> "btn btn-primary"){@Messages("reset.submit")}
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:1:1: not found: value AuthForms
+[error] @(signUpForm: Form[AuthForms.SignUpData])(implicit request: RequestHeader, messages:Messages)
+[error] ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:1:20: not found: value AuthForms
+[error] @(signUpForm: Form[AuthForms.SignUpData])(implicit request: RequestHeader, messages:Messages)
+[error]                    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:3:31: not found: value b3
+[error] @implicitFieldConstructor = @{b3.horizontal.fieldConstructor("col-md-3","col-md-6")}
+[error]                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:9:4: not found: value b3
+[error]   @b3.form(routes.Auth.handleStartSignUp) {
+[error]    ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:14:8: not found: value b3
+[error]       @b3.email(signUpForm("email"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:19:8: not found: value b3
+[error]       @b3.text(signUpForm("firstName"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:23:8: not found: value b3
+[error]       @b3.text(signUpForm("lastName"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:27:8: not found: value b3
+[error]       @b3.password(signUpForm("password.password1"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:31:8: not found: value b3
+[error]       @b3.password(signUpForm("password.password2"), 
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:36:8: not found: value b3
+[error]       @b3.submit('class -> "btn btn-primary"){ @Messages("signup.submit") }
+[error]        ^
+[error] D:\e-business\play-products-crud-slick\app\views\auth\startSignUp.scala.html:42:2: not found: value AuthForms
+[error] }
+[error]  ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\main.scala.html:11:73: not found: value WebJarAssets
+[error]     <link rel="stylesheet" media="screen" href="@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.css"))">
+[error]                                                                         ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\main.scala.html:34:65: not found: value WebJarAssets
+[error]     <script type="text/javascript" src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
+[error]                                                                 ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\main.scala.html:35:65: not found: value WebJarAssets
+[error]     <script type="text/javascript" src="@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.js"))"></script>
+[error]                                                                 ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:1:13: object mohiva is not a member of package com
+[error] @import com.mohiva.play.silhouette.api.LoginInfo
+[error]             ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:7:64: not found: type User
+[error]     <li class="@("active".when(tab == "index"))"><a href="@routes.Application.index">@Messages("navbar.index")</a></li>
+[error]                                                                ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:7:77: not found: type LoginInfo
+[error]     <li class="@("active".when(tab == "index"))"><a href="@routes.Application.index">@Messages("navbar.index")</a></li>
+[error]                                                                             ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:3:55: not found: type User
+[error] @(title: String, tab: String = "", loggedUser: Option[User], loginInfo:Option[LoginInfo] = None)(content: Html)(implicit messages:Messages)
+[error]                                                       ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:3:79: not found: type LoginInfo
+[error] @(title: String, tab: String = "", loggedUser: Option[User], loginInfo:Option[LoginInfo] = None)(content: Html)(implicit messages:Messages)
+[error]                                                                               ^
+[error] D:\e-business\play-products-crud-slick\app\views\templates\mainApp.scala.html:28:37: not found: type User
+[error] @main(title, navbarContent)(content)
+[error]                                     ^
+[error] 56 errors found

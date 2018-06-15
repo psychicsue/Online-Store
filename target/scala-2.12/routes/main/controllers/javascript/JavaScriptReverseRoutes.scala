@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:D:/e-business/play-products-crud-slick/conf/routes
-// @DATE:Mon May 28 22:19:49 CEST 2018
+// @DATE:Fri Jun 15 18:42:35 CEST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 

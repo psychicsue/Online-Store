@@ -1,9 +1,11 @@
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import React, { Component } from 'react';
+import './App.css';
 
 class NavbarStyle extends Component {
   render() {
     return (
+        <div className="nav">
         <Nav bsStyle="tabs">
             <Navbar.Header>
                 <Navbar.Brand>
@@ -19,7 +21,7 @@ class NavbarStyle extends Component {
                     Categories
                 </NavItem>
         </Nav>
-
+        </div>
     );
   }
 }

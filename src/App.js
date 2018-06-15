@@ -6,19 +6,19 @@ import {
     Link
 } from 'react-router-dom';
 import './App.css';
-import Products from './Products'
-import ProductForm from './ProductForm'
-import NavbarStyle from "./NavbarStyle";
+import Products from './Products/Products'
+import ProductForm from './AddProductForm/ProductForm'
 
 class App extends Component {
   render() {
     return <Router>
 
         <div id="menu">
-            <NavbarStyle/>
+            {/*<NavbarStyle/>*/}
+            <h2>DREAMDRUM</h2>
             <ul>
                 <li>
-                    <Link to="./products">Products</Link>
+                    <Link to="/products">Products</Link>
                 </li>
                 <li>
                     <Link to="/">Add Product</Link>
